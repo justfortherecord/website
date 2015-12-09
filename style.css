@@ -1,3 +1,46 @@
+/* ---------- FONTS ----------- */
+@font-face {
+    font-family: neo-euler;
+    src: url("/fonts/neo-euler/ams-euler.ttf");
+}
+@font-face {
+    font-family: bitter;
+    src: url("/fonts/bitter/Bitter-Bold.ttf");
+}
+@font-face {
+    font-family: junction;
+    src: url("/fonts/junction-master/webfonts/junction-bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: junction;
+    src: url("/fonts/junction-master/webfonts/junction-light.ttf");
+    font-weight: light;
+}
+@font-face {
+    font-family: junction;
+    src: url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.eot');
+    /*src: url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.woff2') format('woff2'),
+         url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.woff') format('woff'),
+         url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.ttf') format('truetype'),
+         url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.svg') format('svg');*/
+    font-weight: bold;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'spartan';
+    src: url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.eot');
+    src: url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.woff2') format('woff2'),
+         url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.woff') format('woff'),
+         url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'universelse';
+    src: url("/fonts/universelse/universelse-bold-webfont.ttf");
+}
+
 /* FIX THE BROWSERS’ DEFAULT SETTINGS */
 * {
     margin: 0;
@@ -14,7 +57,10 @@ body {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 50px;
-    font-family: sans-serif;
+  /* font-family: spartan;*/
+    font-family: 'spartan';
+    font-weight: bold;
+    font-style: normal;
     font-size: 1.3em;
     line-height: 1.2em;
     letter-spacing: 0.5px;
