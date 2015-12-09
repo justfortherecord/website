@@ -143,56 +143,110 @@ img {
     margin-top: 1.3em;
     margin-bottom: 1.3em;
 }
+hr {
+    border-top: 2px solid black;
+}
 
 /* PERSPECTIVE */
 /* aside elements on every pages */
-aside {
-    perspective: 600px;
-    width: 30%;
-/*    border: 2px dotted black;*/
-    float: left;
-}
-aside .aside-calendar {
-    transform: rotateY(40deg);
-/*    background-color: #2ecc71;*/
-    padding: 20px;
-    width: 100%;
+.aside-calendar {
+    border: 2px solid black;
 }
 .aside-misc {
 /*    background-color: #3498db;*/
     width: 170px;
     padding: 20px;
+    margin-top: 40px;
+    border: 2px solid black;
+    transform: rotateY(-30deg);
 }
 /* main page */
-.perspective-main {
+div.perspective-main {
     perspective: 500px;
     width: 70%;
     float: left;
     margin-left: -35px;
 }
-.perspective-main div {
+div.perspective-main div {
     transform: rotateY(-15deg);
+}
+aside.perspective-main {
+    perspective: 600px;
+    width: 30%;
+/*    border: 2px dotted black;*/
+    float: left;
+}
+aside.perspective-main .aside-calendar {
+    transform: rotateY(40deg);
+/*    background-color: #2ecc71;*/
+    padding: 20px;
+    width: 100%;
 }
 /* about page */
-.perspective-about {
+div.perspective-about {
     perspective: 1500px;
+    width: 60%;
+    float: left;
+    margin-left: -10px;
 }
-.perspective-about div {
+div.perspective-about div {
     transform: rotateY(-15deg);
+}
+aside.perspective-about {
+    perspective: 600px;
+    width: 40%;
+/*    border: 2px dotted black;*/
+    float: left;
+}
+aside.perspective-about .aside-calendar {
+    transform: rotateY(40deg);
+/*    background-color: #2ecc71;*/
+    padding: 20px;
+    width: 100%;
 }
 /* events page */
-.perspective-events {
+div.perspective-events {
     perspective: 500px;
+    width: 50%;
+    float: left;
+    margin-left: -20px;
 }
-.perspective-events div {
+div.perspective-events div {
     transform: rotateY(-15deg);
+}
+aside.perspective-events {
+    perspective: 600px;
+    width: 50%;
+/*    border: 2px dotted black;*/
+    float: left;
+}
+aside.perspective-events .aside-calendar {
+    transform: rotateY(40deg);
+/*    background-color: #2ecc71;*/
+    padding: 20px;
+    width: 100%;
 }
 /* readings page */
-.perspective-readings {
+div.perspective-readings {
     perspective: 1000px;
+    width: 40%;
+    float: left;
+    margin-left: -10px;
 }
-.perspective-readings div {
+div.perspective-readings div {
     transform: rotateY(-15deg);
+}
+aside.perspective-readings {
+    perspective: 600px;
+    width: 60%;
+/*    border: 2px dotted black;*/
+    float: left;
+}
+aside.perspective-readings .aside-calendar {
+    transform: rotateY(40deg);
+/*    background-color: #2ecc71;*/
+    padding: 20px;
+    width: 100%;
 }
 
 /* LANGUAGES */

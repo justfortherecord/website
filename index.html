@@ -37,8 +37,56 @@
     <!-- Favicons -->
     <link rel="shortcut icon" href="images/favicon.ico" />
     <!-- JS -->
+    <script type="text/javascript" src="handlebars-1.0.rc.1.js"></script>
     <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+
+    <!-- ZOTERO -->
+    <script id="entry-template" type="text/x-handlebars-template">
+    {{#each items}}
+        {{{ data.note }}}
+    {{/each}}
+    </script>
+
+    <script>
+    $(function() {
+        var source = $("#entry-template").html();
+        var template = Handlebars.compile(source);
+
+    var processData = function(inData) {
+        var obj = {}
+        for (var i=0; i < inData.length; i++) {
+            item = inData[i];
+            obj[item.data.key] = item;
+        }
+        var getSortString = function(item) {
+            if (!item.data.title) {
+                if (item.data.parentItem) {
+                    return obj[item.data.parentItem].data.title + item.data.note;
+                } else {
+                    return item.data.note;
+                }
+            }
+            return item.data.title;
+        }
+        //takes everytime two objects of the array and compares them
+        inData.sort(function(a, b) {
+            a = getSortString(a);
+            b = getSortString(b);
+            if (a === b) return 0;
+            if (a < b) return -1;
+            if (a > b) return 1;
+        });
+        return inData;
+    }
+        /* gets the collection from zotero */
+     $.getJSON('https://api.zotero.org/groups/401871/collections/X6RMMIIZ/items?key=1L6PZcpcAGt60UArycW14g7v&limit=100&sort=title', function(incomingData) {
+            var processedData = processData(incomingData);
+            $("#items-container").html(template({ items: processedData }));
+        });
+    });
+    </script>
 
 </head>
 <body>
@@ -71,22 +119,26 @@
         </ul>
     </nav>
 
-<aside>
+<aside class="perspective-main">
     <div class="aside-calendar">
-        CALENDAR:<br />
-        15.01.15<br />
-        <i>Heroines</i><br />
-        PianoFabriek<br />
-        27.02.15<br />
-        <i>Patterns</i><br />
-        Amazone<br />
-        18-20.03.15<br />
-        Ladyfest.
+        <a href="events.html" class="internal-link">EVENTS:<br />
+        <hr>
+        <ul>
+        <li style="text-align: center">15.01.15</li>
+        <li><i>Heroines</i></li>
+        <li>PianoFabriek</li>
+        <hr>
+        <li style="text-align: center">27.02.15</li>
+        <li><i>Patterns</i></li>
+        <li>Amazone</li>
+        <hr>
+        <li style="text-align: center">18-20.03.15</li>
+        <li>Ladyfest</li>
+        </ul></a>
     </div>
-    <div class="aside-misc">
-        We love this and that and this an that!
-    </div>
-    <div class="aside-logo">
+    <div class="aside-misc container">Just for the record:
+        <div id="items-container">
+        </div>
     </div>
 </aside>
 
