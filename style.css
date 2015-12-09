@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a, a:visited, a:hover, a:active, a:link {
+    color:#000000;
+    border-bottom: 2px dashed black;
+    text-decoration: none;
+}
+a.internal-link, a.internal-link:visited, a.internal-link:hover, a.internal-link:active, a.internal-link:link {
+    border-bottom: 0px;
+}
+
+body {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    line-height: 1.2em;
+    letter-spacing: 0.5px;
+}
+nav {
+    margin-top: 0px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+nav li, nav div {
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    margin-right: 20px;
+}
+nav li.nl, nav li.fr, nav li.en {
+    margin-right: 0px;
+}
+p + p {
+    text-indent: 3em;
+    margin-top: 1.3em;
+}
+h1 {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+h2 {
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+h3 {
+    font-size: 0.9em;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-weight: normal;
+}
+img {
+    display: block;
+    margin: auto;
+    max-width: 600px;
+    margin-top: 1.3em;
+    margin-bottom: 1.3em;
+}
+li {
+    list-style-type: none;
+}
+.active {
+    display: none;
+}
+.bibliography li {
+    margin-top: 1.3em;
+}
+/* for the langugae button */
+#select_language {
+    cursor: pointer;
+    color: grey;
+}
