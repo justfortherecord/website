@@ -1,24 +1,16 @@
+/* FIX THE BROWSERS’ DEFAULT SETTINGS */
 * {
     margin: 0;
     padding: 0;
 }
-
 div {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-a, a:visited, a:hover, a:active, a:link {
-    color:#000000;
-    border-bottom: 2px dashed black;
-    text-decoration: none;
-}
-a.internal-link, a.internal-link:visited, a.internal-link:hover, a.internal-link:active, a.internal-link:link {
-    border-bottom: 0px;
-}
-
+/* GENERAL STYLING */
 body {
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 50px;
@@ -27,8 +19,17 @@ body {
     line-height: 1.2em;
     letter-spacing: 0.5px;
 }
+.grid div {
+    float: left;
+    width: 10%;
+    border-left: 1px dotted black;
+    border-right: 1px dotted black;
+    text-align: right;
+    padding: 5px;
+}
 nav {
     margin-top: 0px;
+    margin-left: 30%;
     font-size: 14px;
     margin-bottom: 40px;
 }
@@ -37,10 +38,14 @@ nav li, nav div {
     list-style-type: none;
     text-align: center;
     margin-right: 20px;
+    width: 10%;
 }
 nav li.nl, nav li.fr, nav li.en {
     margin-right: 0px;
+    width: auto;
 }
+
+/* FONTS */
 p + p {
     text-indent: 3em;
     margin-top: 1.3em;
@@ -69,6 +74,22 @@ h3 {
     margin-top: 30px;
     font-weight: normal;
 }
+/* LINKS */
+a, a:visited, a:hover, a:active, a:link {
+    color:#000000;
+    border-bottom: 2px dashed black;
+    text-decoration: none;
+}
+a.internal-link, a.internal-link:visited, a.internal-link:hover, a.internal-link:active, a.internal-link:link {
+    border-bottom: 0px;
+}
+li {
+    list-style-type: none;
+}
+.bibliography li {
+    margin-top: 1.3em;
+}
+/* ELEMENTS */
 img {
     display: block;
     margin: auto;
@@ -76,17 +97,65 @@ img {
     margin-top: 1.3em;
     margin-bottom: 1.3em;
 }
-li {
-    list-style-type: none;
+
+/* PERSPECTIVE */
+/* aside elements on every pages */
+aside {
+    perspective: 600px;
+    width: 30%;
+/*    border: 2px dotted black;*/
+    float: left;
 }
-.active {
-    display: none;
+aside .aside-calendar {
+    transform: rotateY(40deg);
+/*    background-color: #2ecc71;*/
+    padding: 20px;
+    width: 100%;
 }
-.bibliography li {
-    margin-top: 1.3em;
+.aside-misc {
+/*    background-color: #3498db;*/
+    width: 170px;
+    padding: 20px;
 }
+/* main page */
+.perspective-main {
+    perspective: 500px;
+    width: 70%;
+    float: left;
+    margin-left: -35px;
+}
+.perspective-main div {
+    transform: rotateY(-15deg);
+}
+/* about page */
+.perspective-about {
+    perspective: 1500px;
+}
+.perspective-about div {
+    transform: rotateY(-15deg);
+}
+/* events page */
+.perspective-events {
+    perspective: 500px;
+}
+.perspective-events div {
+    transform: rotateY(-15deg);
+}
+/* readings page */
+.perspective-readings {
+    perspective: 1000px;
+}
+.perspective-readings div {
+    transform: rotateY(-15deg);
+}
+
+/* LANGUAGES */
 /* for the langugae button */
 #select_language {
     cursor: pointer;
     color: grey;
+}
+/* when a language is selected the others are not displayed */
+.active {
+    display: none;
 }
