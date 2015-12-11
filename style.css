@@ -1,44 +1,46 @@
 /* ---------- FONTS ----------- */
 @font-face {
-    font-family: neo-euler;
-    src: url("/fonts/neo-euler/ams-euler.ttf");
+    font-family: 'neo-euler';
+    src: url("fonts/neo-euler/ams-euler.ttf");
 }
 @font-face {
-    font-family: bitter;
-    src: url("/fonts/bitter/Bitter-Bold.ttf");
+    font-family: 'bitter';
+    src: url("fonts/bitter/Bitter-Regular.ttf");
+    font-weight: normal;
 }
 @font-face {
-    font-family: junction;
-    src: url("/fonts/junction-master/webfonts/junction-bold.ttf");
+    font-family: 'bitter';
+    src: url("fonts/bitter/Bitter-Bold.ttf");
     font-weight: bold;
 }
 @font-face {
-    font-family: junction;
-    src: url("/fonts/junction-master/webfonts/junction-light.ttf");
+    font-family: 'junction';
+    src: url("fonts/junction-master/webfonts/junction-bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'junction';
+    src: url("fonts/junction-master/webfonts/junction-light.ttf");
     font-weight: light;
 }
 @font-face {
-    font-family: junction;
-    src: url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.eot');
-    /*src: url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.woff2') format('woff2'),
-         url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.woff') format('woff'),
-         url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.ttf') format('truetype'),
-         url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.svg') format('svg');*/
-    font-weight: bold;
+    font-family: 'junction';
+    src: url('fonts/junction-master/_webfonts/Junction-regular.otf');
+    font-weight: normal;
     font-style: normal;
   }
 @font-face {
     font-family: 'spartan';
-    src: url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.eot');
-    src: url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.woff2') format('woff2'),
-         url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.woff') format('woff'),
-         url('/fonts/league-spartan-master/_webfonts/leaguespartan-bold.ttf') format('truetype');
+    src: url('fonts/league-spartan-master/_webfonts/leaguespartan-bold.eot');
+    src: url('fonts/league-spartan-master/_webfonts/leaguespartan-bold.woff2') format('woff2'),
+         url('fonts/league-spartan-master/_webfonts/leaguespartan-bold.woff') format('woff'),
+         url('fonts/league-spartan-master/_webfonts/leaguespartan-bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'universelse';
-    src: url("/fonts/universelse/universelse-bold-webfont.ttf");
+    src: url("fonts/universelse/universelse-bold-webfont.ttf");
 }
 
 /* FIX THE BROWSERS’ DEFAULT SETTINGS */
@@ -57,9 +59,7 @@ body {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 50px;
-  /* font-family: spartan;*/
-    font-family: 'spartan';
-    font-weight: bold;
+    font-family: 'PT Sans';
     font-style: normal;
     font-size: 1.3em;
     line-height: 1.2em;
@@ -78,6 +78,7 @@ nav {
     margin-left: 30%;
     font-size: 14px;
     margin-bottom: 40px;
+    font-family: 'spartan';
 }
 nav li, nav div {
     display: inline-block;
@@ -103,6 +104,7 @@ h1 {
     margin-bottom: 30px;
     font-weight: normal;
     text-align: center;
+    font-family: 'spartan';
 }
 h2 {
     font-size: 1.1em;
@@ -112,6 +114,7 @@ h2 {
     margin-bottom: 30px;
     font-weight: normal;
     text-align: center;
+    font-family: 'spartan';
 }
 h3 {
     font-size: 0.9em;
@@ -145,12 +148,14 @@ img {
 }
 hr {
     border-top: 2px solid black;
+    margin: 5px 0;
 }
 
 /* PERSPECTIVE */
 /* aside elements on every pages */
 .aside-calendar {
     border: 2px solid black;
+    font-family: 'spartan';
 }
 .aside-misc {
 /*    background-color: #3498db;*/
@@ -187,16 +192,16 @@ div.perspective-about {
     perspective: 1500px;
     width: 60%;
     float: left;
-    margin-left: -10px;
+    margin-left: -15px;
 }
 div.perspective-about div {
     transform: rotateY(-15deg);
 }
 aside.perspective-about {
     perspective: 600px;
-    width: 40%;
-/*    border: 2px dotted black;*/
+    width: 30%;
     float: left;
+    margin-right: 10%;
 }
 aside.perspective-about .aside-calendar {
     transform: rotateY(40deg);
@@ -216,9 +221,9 @@ div.perspective-events div {
 }
 aside.perspective-events {
     perspective: 600px;
-    width: 50%;
-/*    border: 2px dotted black;*/
+    width: 30%;
     float: left;
+    margin-right: 20%;
 }
 aside.perspective-events .aside-calendar {
     transform: rotateY(40deg);
@@ -238,9 +243,9 @@ div.perspective-readings div {
 }
 aside.perspective-readings {
     perspective: 600px;
-    width: 60%;
-/*    border: 2px dotted black;*/
+    width: 30%;
     float: left;
+    margin-right: 30%;
 }
 aside.perspective-readings .aside-calendar {
     transform: rotateY(40deg);
@@ -250,10 +255,10 @@ aside.perspective-readings .aside-calendar {
 }
 
 /* LANGUAGES */
-/* for the langugae button */
+/* for the language button */
 #select_language {
     cursor: pointer;
-    color: grey;
+    padding-left: 10px;
 }
 /* when a language is selected the others are not displayed */
 .active {
