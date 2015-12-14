@@ -31,11 +31,11 @@
   }
 @font-face {
     font-family: 'spartan';
-    src: url('fonts/junction-master/LeagueSpartan-Bold.otf');
-    src: url('fonts/league-spartan-master/_webfonts/leaguespartan-bold.eot');
-    src: url('fonts/league-spartan-master/_webfonts/leaguespartan-bold.woff2') format('woff2'),
-         url('fonts/league-spartan-master/_webfonts/leaguespartan-bold.woff') format('woff'),
-         url('fonts/league-spartan-master/_webfonts/leaguespartan-bold.ttf') format('truetype');
+    src: url('fonts/league-spartan/LeagueSpartan-Bold.otf');
+    src: url('fonts/league-spartan/leaguespartan-bold.eot');
+    src: url('fonts/league-spartan/leaguespartan-bold.woff2') format('woff2'),
+         url('fonts/league-spartan/leaguespartan-bold.woff') format('woff'),
+         url('fonts/league-spartan/leaguespartan-bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
