@@ -65,7 +65,7 @@ body {
     font-size: 1.3em;
     line-height: 1.2em;
     letter-spacing: 0.5px;
-    background-color: tomato;
+    background-color: #FFFFC7;
 }
 .grid div {
     float: left;
@@ -164,7 +164,7 @@ hr {
 .aside-calendar {
     border: 6px solid black;
     font-family: 'spartan';
-    background-color: beige;
+    background-color: #FFFFC7;
 }
 .aside-misc {
     display: none;
