@@ -83,7 +83,7 @@ nav {
 nav li, nav div {
     display: inline-block;
     list-style-type: none;
-    text-align: center;
+    text-align: left;
     margin-right: 20px;
     width: 10%;
 }
@@ -105,6 +105,12 @@ h1 {
     font-weight: normal;
     text-align: center;
     font-family: 'spartan';
+}
+h1.JFTR {
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-bottom:0px;
+    text-align: left;
 }
 h2 {
     font-size: 1.1em;
@@ -154,7 +160,7 @@ hr {
 /* PERSPECTIVE */
 /* aside elements on every pages */
 .aside-calendar {
-    border: 2px solid black;
+    border: 6px solid black;
     font-family: 'spartan';
 }
 .aside-misc {
@@ -170,10 +176,13 @@ div.perspective-main {
     perspective: 500px;
     width: 70%;
     float: left;
-    margin-left: -35px;
+    margin-left: -45px;
 }
 div.perspective-main div {
     transform: rotateY(-15deg);
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
+    padding: 10px 0;
 }
 aside.perspective-main {
     perspective: 600px;
@@ -196,6 +205,9 @@ div.perspective-about {
 }
 div.perspective-about div {
     transform: rotateY(-15deg);
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
+    padding: 10px 0;
 }
 aside.perspective-about {
     perspective: 600px;
@@ -218,6 +230,9 @@ div.perspective-events {
 }
 div.perspective-events div {
     transform: rotateY(-15deg);
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
+    padding: 10px 0;
 }
 aside.perspective-events {
     perspective: 600px;
@@ -240,6 +255,9 @@ div.perspective-readings {
 }
 div.perspective-readings div {
     transform: rotateY(-15deg);
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
+    padding: 10px 0;
 }
 aside.perspective-readings {
     perspective: 600px;
