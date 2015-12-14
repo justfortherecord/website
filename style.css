@@ -42,6 +42,36 @@
     font-family: 'universelse';
     src: url("fonts/universelse/universelse-bold-webfont.ttf");
 }
+@font-face {
+    font-family: 'tulpen';
+    src: url("fonts/tulpen/TulpenOne-Regular.ttf");
+}
+@font-face {
+    font-family: 'nadia-serif';
+    src: url("fonts/nadia--serif/nadia_serif.ttf");
+}
+@font-face {
+    font-family: 'kroen';
+    src: url("fonts/kroen/Kreon-Regular.ttf");
+    font-weight: regular;
+
+}
+@font-face {
+    font-family: 'kroen';
+    src: url("fonts/kroen/Kreon-Bold.ttf");
+    font-weight: bold;
+
+}
+@font-face {
+    font-family: 'kroen';
+    src: url("fonts/kroen/Kreon-Light.ttf");
+    font-weight: light;
+
+}
+@font-face {
+    font-family: 'fjord';
+    src: url("fonts/fjord/FjordOne-Regular.otf");
+}
 
 /* FIX THE BROWSERS’ DEFAULT SETTINGS */
 * {
@@ -76,7 +106,7 @@ body {
 nav {
     margin-top: 0px;
     margin-left: 30%;
-    font-size: 14px;
+    font-size: 11px;
     margin-bottom: 40px;
     font-family: 'spartan';
 }
@@ -154,15 +184,33 @@ hr {
 /* PERSPECTIVE */
 /* aside elements on every pages */
 .aside-calendar {
-    border: 2px solid black;
+    border: 1px solid black;
     font-family: 'spartan';
+    font-size: 10pt;
+}
+.aside-calendar ul {
+    font-family: 'bitter';
+    font-weight: normal;
+
+}
+.aside-calendar ul dt {
+    font-family: 'spartan';
+    font-weight: normal;
+    text-indent: 1em;
+    margin-top: 10pt;
+}
+.aside-calendar ul dt  {
+    font-family: 'spartan';
+    font-weight: normal;
+    text-indent: 1em;
+    margin-top: 10pt;
 }
 .aside-misc {
 /*    background-color: #3498db;*/
     width: 170px;
     padding: 20px;
     margin-top: 40px;
-    border: 2px solid black;
+    border: 1px solid black;
     transform: rotateY(-30deg);
 }
 /* main page */
