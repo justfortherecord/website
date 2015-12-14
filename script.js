@@ -34,5 +34,14 @@ $(function() {
         showLanguage($(this).attr("class"));
     })
 })
-
 /* END LANGUAGE */
+
+$(document).ready(function(){
+    $(".love-background").mouseover(function(){
+        $("body").css("background-image", "url(equal-beige-background.png)");
+        $("body").css("background-image", "background-repeat: repeat");
+    });
+    $(".love-background").mouseout(function(){
+        $("body").css("background-image", "");
+    });
+});

@@ -65,6 +65,7 @@ body {
     font-size: 1.3em;
     line-height: 1.2em;
     letter-spacing: 0.5px;
+    background-color: tomato;
 }
 .grid div {
     float: left;
@@ -77,7 +78,7 @@ body {
 nav {
     margin-top: 0px;
     margin-left: 30%;
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 40px;
     font-family: 'spartan';
 }
@@ -163,14 +164,16 @@ hr {
 .aside-calendar {
     border: 6px solid black;
     font-family: 'spartan';
+    background-color: beige;
 }
 .aside-misc {
+    display: none;
 /*    background-color: #3498db;*/
     width: 170px;
     padding: 20px;
     margin-top: 40px;
     border: 2px solid black;
-    transform: rotateY(-30deg);
+    transform: rotateY(-0deg);
 }
 /* main page */
 div.perspective-main {
@@ -202,22 +205,22 @@ div.perspective-about {
     perspective: 1500px;
     width: 60%;
     float: left;
-    margin-left: -15px;
+    margin-left: -10px;
 }
 div.perspective-about div {
-    transform: rotateY(-15deg);
+    transform: rotateY(-8deg);
     border-top: 6px solid black;
     border-bottom: 6px solid black;
     padding: 10px 0;
 }
 aside.perspective-about {
-    perspective: 600px;
+    perspective: 800px;
     width: 30%;
     float: left;
     margin-right: 10%;
 }
 aside.perspective-about .aside-calendar {
-    transform: rotateY(40deg);
+    transform: rotateY(38deg);
 /*    background-color: #2ecc71;*/
     padding: 20px;
     width: 100%;
@@ -236,13 +239,13 @@ div.perspective-events div {
     padding: 10px 0;
 }
 aside.perspective-events {
-    perspective: 600px;
+    perspective: 1000px;
     width: 30%;
     float: left;
     margin-right: 20%;
 }
 aside.perspective-events .aside-calendar {
-    transform: rotateY(40deg);
+    transform: rotateY(36deg);
 /*    background-color: #2ecc71;*/
     padding: 20px;
     width: 100%;
@@ -252,22 +255,23 @@ div.perspective-readings {
     perspective: 1000px;
     width: 40%;
     float: left;
-    margin-left: -10px;
+    margin-left: -4px;
+    margin-bottom: 30px;
 }
 div.perspective-readings div {
-    transform: rotateY(-15deg);
+    transform: rotateY(-6deg);
     border-top: 6px solid black;
     border-bottom: 6px solid black;
     padding: 10px 0;
 }
 aside.perspective-readings {
-    perspective: 600px;
+    perspective: 1200px;
     width: 30%;
     float: left;
     margin-right: 30%;
 }
 aside.perspective-readings .aside-calendar {
-    transform: rotateY(40deg);
+    transform: rotateY(34deg);
 /*    background-color: #2ecc71;*/
     padding: 20px;
     width: 100%;
