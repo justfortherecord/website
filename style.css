@@ -63,14 +63,57 @@
 
 }
 @font-face {
-    font-family: 'kroen';
+    font-family: 'kroen-light';
     src: url("fonts/kroen/Kreon-Light.ttf");
-    font-weight: light;
-
 }
 @font-face {
     font-family: 'fjord';
     src: url("fonts/fjord/FjordOne-Regular.otf");
+}
+
+@font-face {
+    font-family: 'abeezee';
+    src: url("fonts/abazee/ABeeZee-Italic.otf");
+    font-style: italic;
+}
+@font-face {
+    font-family: 'abeezee';
+    src: url("fonts/abazee/ABeeZee-Regular.otf");
+    font-style: normal;
+}
+@font-face {
+    font-family: 'belgica16';
+    src: url("fonts/Belgika/fonts/Belgika-16th.otf");
+}
+@font-face {
+    font-family: 'belgica8';
+    src: url("fonts/Belgika/fonts/Belgika-8th.otf");
+}
+/* variables */
+/* ---------- MIXINS ----------- */
+/* Mixin to generate random number;
+   int should be 0 or 1, 1 being to make it an integer
+*/
+.makeRandom(@min: 0, @max: @min+1, @int: 0) {
+  .checkInt() {
+    @getNum: `Math.random() * (@{max} - @{min} + @{int})`;
+    @base: unit(`@{int} == 1 ? Math.floor(@{getNum}) : @{getNum}`);
+  }
+  .checkInt();
+  @randNum: @base + @min;
+}
+
+@keyframes example {
+  0%  {background-color: #96CAAF;}
+    30%  {background-color: #FFF6C8; }
+    60%  {background-color: #AEA985; }
+    100%  {background-color: #96CAAF;}
+}
+@keyframes main {
+    0%  {background-color: #FFF6C8; }
+    50%  {background-color: #96CAAF;}
+    100%  {background-color: #FFF6C8; }
+
 }
 
 /* FIX THE BROWSERS’ DEFAULT SETTINGS */
@@ -89,12 +132,22 @@ body {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 50px;
-    font-family: 'PT Sans';
-    font-style: normal;
+    font-family: 'kroen';
+    font-style: light;
     font-size: 1.3em;
     line-height: 1.2em;
     letter-spacing: 0.5px;
+
+     animation-name: example;
+       animation-duration: 200s;
+       animation-iteration-count: infinite;
 }
+.header {
+  width: 100%;
+  border-bottom: 4px solid #000;
+  /*background-color: #FFF;*/
+  padding-top: 1pt;
+  }
 .grid div {
     float: left;
     width: 10%;
@@ -104,11 +157,11 @@ body {
     padding: 5px;
 }
 nav {
-    margin-top: 0px;
+    margin-top: -16px;
     margin-left: 30%;
     font-size: 11px;
-    margin-bottom: 40px;
-    font-family: 'spartan';
+margin-bottom: 33px;
+    font-family: 'belgica8';
 }
 nav li, nav div {
     display: inline-block;
@@ -128,13 +181,15 @@ p + p {
     margin-top: 1.3em;
 }
 h1 {
-    font-size: 1.3em;
+    font-size: 2em;
     line-height: 1.3em;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    font-weight: normal;
+    /*text-transform: uppercase;*/
+  margin-bottom: 3px;
+      font-weight: normal;
     text-align: center;
     font-family: 'spartan';
+    margin-top: 20pt;
+
 }
 h2 {
     font-size: 1.1em;
@@ -176,6 +231,19 @@ img {
     margin-top: 1.3em;
     margin-bottom: 1.3em;
 }
+.logo{
+    margin-top: 0.7em;
+    float: left;
+    margin-left: 31pt;
+    position: absolute;
+    width: 5%;
+}
+.button {
+  width: 5%;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  display: inline;
+}
 hr {
     border-top: 2px solid black;
     margin: 5px 0;
@@ -184,9 +252,10 @@ hr {
 /* PERSPECTIVE */
 /* aside elements on every pages */
 .aside-calendar {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     font-family: 'spartan';
     font-size: 10pt;
+   background-color: #96CAAF;
 }
 .aside-calendar ul {
     font-family: 'bitter';
@@ -199,29 +268,44 @@ hr {
     text-indent: 1em;
     margin-top: 10pt;
 }
-.aside-calendar ul dt  {
-    font-family: 'spartan';
+.aside-calendar ul dd + dd {
+    font-family: 'belgica16';
     font-weight: normal;
     text-indent: 1em;
-    margin-top: 10pt;
+    font-size: 7.5pt;
+    margin-top: -3pt;
+
 }
 .aside-misc {
 /*    background-color: #3498db;*/
     width: 170px;
     padding: 20px;
     margin-top: 40px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     transform: rotateY(-30deg);
+    font-family: "spartan";
+    background-color: #FFF6C8;
 }
 /* main page */
 div.perspective-main {
-    perspective: 500px;
+  perspective: 442px;
     width: 70%;
     float: left;
-    margin-left: -35px;
+    margin-left: -70px;
 }
 div.perspective-main div {
     transform: rotateY(-15deg);
+    width: 97%;
+      margin-top: 23pt;
+    /*background-color: #AEA985;*/
+    animation-name: main;
+      animation-duration: 200s;
+      animation-iteration-count: infinite;
+    padding-left: 35pt;
+    padding-top: 20pt;
+    padding-right: 25pt;
+    padding-bottom: 20pt;
+
 }
 aside.perspective-main {
     perspective: 600px;
@@ -237,13 +321,24 @@ aside.perspective-main .aside-calendar {
 }
 /* about page */
 div.perspective-about {
-    perspective: 1500px;
+    perspective: 1642px;
     width: 60%;
     float: left;
     margin-left: -15px;
+
 }
 div.perspective-about div {
     transform: rotateY(-15deg);
+    width: 97%;
+      margin-top: 23pt;
+    /*background-color: #AEA985;*/
+    animation-name: main;
+      animation-duration: 200s;
+      animation-iteration-count: infinite;
+    padding-left: 35pt;
+    padding-top: 20pt;
+    padding-right: 25pt;
+    padding-bottom: 20pt;
 }
 aside.perspective-about {
     perspective: 600px;
@@ -306,7 +401,7 @@ aside.perspective-readings .aside-calendar {
 /* for the language button */
 #select_language {
     cursor: pointer;
-    padding-left: 10px;
+    padding-left: 170px;
 }
 /* when a language is selected the others are not displayed */
 .active {
