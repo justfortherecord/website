@@ -65,7 +65,6 @@ body {
     font-size: 1.3em;
     line-height: 1.2em;
     letter-spacing: 0.5px;
-    background-color: #FFFFC7;
 }
 .grid div {
     float: left;
@@ -111,8 +110,9 @@ h1 {
 h1.JFTR {
     font-size: 40px;
     letter-spacing: 4px;
+    margin-top: 20px;
     margin-bottom: -2px;
-    text-align: left;
+    text-align: center;
 }
 h2 {
     font-size: 1.1em;
@@ -164,7 +164,6 @@ hr {
 .aside-calendar {
     border: 6px solid black;
     font-family: 'spartan';
-    background-color: #FFFFC7;
 }
 .aside-misc {
     display: none;
