@@ -42,53 +42,6 @@
     <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <script src="js/scrollorama/jquery.superscrollorama.js"></script>
-
-    <!-- ZOTERO -->
-    <script id="entry-template" type="text/x-handlebars-template">
-    {{#each items}}
-        {{{ data.note }}}
-    {{/each}}
-    </script>
-
-    <script>
-    $(function() {
-        var source = $("#entry-template").html();
-        var template = Handlebars.compile(source);
-
-    var processData = function(inData) {
-        var obj = {}
-        for (var i=0; i < inData.length; i++) {
-            item = inData[i];
-            obj[item.data.key] = item;
-        }
-        var getSortString = function(item) {
-            if (!item.data.title) {
-                if (item.data.parentItem) {
-                    return obj[item.data.parentItem].data.title + item.data.note;
-                } else {
-                    return item.data.note;
-                }
-            }
-            return item.data.title;
-        }
-        //takes everytime two objects of the array and compares them
-        inData.sort(function(a, b) {
-            a = getSortString(a);
-            b = getSortString(b);
-            if (a === b) return 0;
-            if (a < b) return -1;
-            if (a > b) return 1;
-        });
-        return inData;
-    }
-        /* gets the collection from zotero */
-     $.getJSON('https://api.zotero.org/groups/401871/collections/X6RMMIIZ/items?key=1L6PZcpcAGt60UArycW14g7v&limit=100&sort=title', function(incomingData) {
-            var processedData = processData(incomingData);
-            $("#items-container").html(template({ items: processedData }));
-        });
-    });
-    </script>
-
 </head>
 <body>
 
@@ -105,21 +58,20 @@
     <div class="header">
             <img class="logo" src="images/favicon.ico"/>
             <h1> Just For The Record</h1>
-
-                <nav>
-                    <ul>
-                        <li><a href="about.html" class="internal-link">ABOUT</a></li>
-                        <li><a href="events.html" class="internal-link">EVENTS</a></li>
-                        <li><a href="readings.html" class="internal-link">library</a></li>
-                        <div id="select_language">
-                            <ul>
-                                <li class="nl"><a href="#nl" class="internal-link">NL</a></li>
-                                <li class="fr"><a href="#fr" class="internal-link">FR</a></li>
-                                <li class="en"><a href="#en" class="internal-link">EN</a></li>
-                            </ul>
-                        </div>
-                    </ul>
-                </nav>
+            <nav>
+                <ul>
+                    <li><a href="about.html" class="internal-link">ABOUT</a></li>
+                    <li><a href="events.html" class="internal-link">EVENTS</a></li>
+                    <li><a href="readings.html" class="internal-link">library</a></li>
+                    <div id="select_language">
+                        <ul>
+                            <li class="nl"><a href="#nl" class="internal-link">NL</a></li>
+                            <li class="fr"><a href="#fr" class="internal-link">FR</a></li>
+                            <li class="en"><a href="#en" class="internal-link">EN</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </nav>
       </div>
 <!-- END HEADER -->
 
@@ -150,7 +102,7 @@
 
 
 <!-- INTRO -->
-    <div id="text" class="intro">
+    <div class="text" class="intro">
                 <!--NL -->
                 <div class="nl" lang="nl">
                     <h2>===in aanbouw===</h2>
@@ -186,7 +138,7 @@
 
 
 <!-- ABOUT -->
-<div id="text" class="about">
+<div class="text" class="about">
                     <!-- NL -->
                     <div class="nl" lang="nl">
                         <h2>===in aanbouw===</h2>
@@ -258,7 +210,7 @@
 
 <!-- EVENT -->
 
-<div id="text" class="event">
+<div class="text" class="event">
     <!--NL -->
     <div class="nl" lang="nl">
         <h2>EVENTS</h2>
@@ -307,7 +259,7 @@
 
 
 <!-- LIBRARY -->
-<div id="text" class="library">
+<div class="text" class="library">
 
   <!-- NL -->
     <div class="nl" lang="nl">

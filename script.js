@@ -7,7 +7,7 @@ function defaultLanguage() {
 }
 
 function showLanguage(language) {
-    $("div#text > div").each( function() {
+    $("div.text > div").each( function() {
         if ($(this).attr("class") !== language) {
             $(this).hide();
             $("div#select_language ul li." + $(this).attr("class")).removeClass("active");
