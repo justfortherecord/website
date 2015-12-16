@@ -63,15 +63,12 @@ div {
 }
 /* GENERAL STYLING */
 body {
-    max-width: 800px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    background-color: yellow;
     font-family: 'spartan';
+    font-style: normal;
     font-size: 1.3em;
     line-height: 1.2em;
     letter-spacing: 0.5px;
-
 }
 
 
@@ -111,6 +108,33 @@ a.internal-link, a.internal-link:visited, a.internal-link:hover, a.internal-link
 li {
     list-style-type: none;
 }
+.header, .calendar {
+    max-width: 700px;
+}
+#text {
+    max-width: 700px;
+}
+
+/* BACKGROUND IMAGES */
+.container-background {
+    position: absolute;
+    overflow-x: hidden;
+}
+.container-background img {
+    width: 70%;
+    margin-top: 30%;
+}
+.background-left {
+    margin-left: -20%;
+    float: left;
+}
+.background-right {
+float: left;
+    margin-right: -20%;
+}
+
+
+
 
 /* ELEMENTS */
 img {
