@@ -108,12 +108,7 @@ a.internal-link, a.internal-link:visited, a.internal-link:hover, a.internal-link
 li {
     list-style-type: none;
 }
-.header, .calendar {
-    max-width: 700px;
-}
-#text {
-    max-width: 700px;
-}
+
 
 /* BACKGROUND IMAGES */
 .container-background {
