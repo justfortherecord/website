@@ -55,9 +55,10 @@
 }
 
 @keyframes example {
-    0%  {background-color: #96CAAF;}
-    50%  {background-color: #AEA985; }
-    100%  {background-color: #96CAAF;}
+    0%  {background-color: #FEFE52;}
+    35%  {background-color: #FF8F21;}
+    65%  {background-color: #FF592D;} /* #FE5252 */
+    100%  {background-color: #FEFE52;}
 }
 
 
@@ -73,7 +74,9 @@ div {
 }
 /* GENERAL STYLING */
 body {
-    background-color: yellow;
+    animation-name: example;
+    animation-duration: 300s;
+    animation-iteration-count: infinite;
     font-family: 'spartan';
     font-style: normal;
     font-size: 1.1em;
@@ -186,7 +189,9 @@ nav li.nl, nav li.fr, nav li.en {
 }
 #intro {
     position: absolute;
-    background-color: yellow;
+    animation-name: example;
+    animation-duration: 300s;
+    animation-iteration-count: infinite;
     top: 1400px;
     right: 0px;
     width: 50%;
@@ -231,7 +236,9 @@ nav li.nl, nav li.fr, nav li.en {
     padding-top: 100px;
 }
 #about div {
-    background-color: yellow;
+    animation-name: example;
+    animation-duration: 300s;
+    animation-iteration-count: infinite;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     padding: 5%;
@@ -244,7 +251,9 @@ nav li.nl, nav li.fr, nav li.en {
     padding-top: 200px;
 }
 #library div {
-    background-color: yellow;
+    animation-name: example;
+    animation-duration: 300s;
+    animation-iteration-count: infinite;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     padding: 5%;
