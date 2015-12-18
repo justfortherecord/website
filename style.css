@@ -214,20 +214,6 @@ nav li.nl, nav li.fr, nav li.en {
     background-color: white;
     padding: 20px;
 }
-#events {
-    position: absolute;
-    top: 6000px;
-    left: 0px;
-    width: 49.8%;
-    padding-top: 200px;
-    background-color: transparent;
-}
-#events div {
-    background-color: white;
-    padding: 10px 30px;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-}
 #about {
     position: absolute;
     top: 2500px;
@@ -258,6 +244,20 @@ nav li.nl, nav li.fr, nav li.en {
     border-bottom: 3px solid black;
     padding: 5%;
 }
+#events {
+    position: absolute;
+    top: 6000px;
+    left: 0px;
+    width: 49.8%;
+    padding-top: 200px;
+    background-color: transparent;
+}
+#events div {
+    background-color: white;
+    padding: 10px 30px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
 
 
 
@@ -271,4 +271,51 @@ nav li.nl, nav li.fr, nav li.en {
 /* when a language is selected the others are not displayed */
 .active {
     display: none;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width:50px) and (max-width:600px) {
+    .header {
+        position: absolute;
+        top: 15px;
+        left: 28px;
+        z-index: 100000;
+        margin-top: 40%;
+    }
+    #intro {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+    }
+    #calendar {
+        position: relative;
+        top: 0px;
+        left: 20%;
+    }
+    #about {
+        position: relative;
+        right: 0px;
+        left: 0px;
+        width: 100%;
+        top: 100px;
+        padding-top: 0px;
+    }
+    #library {
+        position: relative;
+        right: 0px;
+        left: 0px;
+        width: 100%;
+        top: 100px;
+        padding-top: 0px;
+    }
+    #events {
+        position: relative;
+        right: 0px;
+        left: 0px;
+        top: 100px;
+        width: 100%;
+        padding-top: 0px;
+    }
 }
