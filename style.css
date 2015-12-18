@@ -292,7 +292,8 @@ nav li.nl, nav li.fr, nav li.en {
     #calendar {
         position: relative;
         top: 0px;
-        left: 20%;
+        left: 0%;
+        padding-left: 20%;
     }
     #about {
         position: relative;
