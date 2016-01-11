@@ -13,10 +13,20 @@
 
 @font-face {
     font-family: 'spartan';
-    src: url('fonts/league-spartan-master/_webfonts/leaguespartan-bold.eot');
-    src: url('fonts/league-spartan-master/_webfonts/leaguespartan-bold.woff2') format('woff2'),
-         url('fonts/league-spartan-master/_webfonts/leaguespartan-bold.woff') format('woff'),
-         url('fonts/league-spartan-master/_webfonts/leaguespartan-bold.ttf') format('truetype');
+    src: url('fonts/league-spartan/leaguespartan-bold.eot');
+    src: url('fonts/league-spartan/leaguespartan-bold.woff2') format('woff2'),
+         url('fonts/league-spartan/leaguespartan-bold.woff') format('woff'),
+         url('fonts/league-spartan/leaguespartan-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'spartan-outlines';
+    src: url('fonts/league-spartan/leaguespartan-bold-outlines-webfont.eot');
+    src: url('fonts/league-spartanvleaguespartan-bold-outlines-webfont.woff2') format('woff2'),
+         url('fonts/league-spartan/leaguespartan-bold-outlines-webfont.woff') format('woff'),
+         url('fonts/league-spartan/leaguespartan-bold-outlines-webfont.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -45,9 +55,10 @@
 }
 
 @keyframes example {
-    0%  {background-color: #96CAAF;}
-    50%  {background-color: #AEA985; }
-    100%  {background-color: #96CAAF;}
+    0%  {background-color: #FEFE52;}
+    35%  {background-color: #FF8F21;}
+    65%  {background-color: #FF592D;} /* #FE5252 */
+    100%  {background-color: #FEFE52;}
 }
 
 
@@ -63,22 +74,14 @@ div {
 }
 /* GENERAL STYLING */
 body {
-    background-color: yellow;
+    animation-name: example;
+    animation-duration: 300s;
+    animation-iteration-count: infinite;
     font-family: 'spartan';
     font-style: normal;
-    font-size: 1.3em;
-    line-height: 1.2em;
+    font-size: 1.1em;
+    line-height: 1.3em;
     letter-spacing: 0.5px;
-}
-
-
-nav {
-    font-size: 11px;
-}
-
-nav li.nl, nav li.fr, nav li.en {
-    margin-right: 0px;
-    width: auto;
 }
 
 /* FONTS */
@@ -87,26 +90,74 @@ p + p {
     margin-top: 1.3em;
 }
 h1 {
-    font-size: 2em;
-    line-height: 1.3em;
-    text-align: center;
+    display: none;
+    font-family: 'spartan-outlines';
+    text-transform: uppercase;
+    font-size: 1.3em;
+    line-height: 1em;
+    text-align: left;
+    letter-spacing: 2px;
     margin-top: 20pt;
 }
 h2 {
+    text-align: center;
+    margin: 20px 0;
+    margin-top: 30px;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 h3 {
+    text-align: left;
+    margin: 20px 0;
+    margin-top: 30px;
+    font-size: 0.95em;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 /* LINKS */
 a, a:visited, a:hover, a:active, a:link {
     color:#000000;
-    border-bottom: 2px dashed black;
+    border-bottom: 2px solid black;
     text-decoration: none;
 }
 a.internal-link, a.internal-link:visited, a.internal-link:hover, a.internal-link:active, a.internal-link:link {
     border-bottom: 0px;
 }
+ul {
+    margin: 1.3em 0;
+}
 li {
     list-style-type: none;
+}
+
+.header {
+    position: fixed;
+    top: 15px;
+    left: 28px;
+    z-index: 100000;
+}
+.header ul {
+    margin: 0;
+}
+nav {
+    margin-left: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+nav li {
+    margin-right: 20px;
+}
+nav li, nav div {
+    display: inline-block;
+    list-style-type: none;
+    text-align: left;
+}
+nav li.nl, nav li.fr, nav li.en {
+    margin-right: 0px;
 }
 
 
@@ -114,18 +165,98 @@ li {
 .container-background {
     position: absolute;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .container-background img {
     width: 70%;
-    margin-top: 30%;
+    float: left;
 }
 .background-left {
     margin-left: -20%;
-    float: left;
+    margin-right: -0.2%;
+    margin-bottom: -0.5%;
 }
 .background-right {
-float: left;
     margin-right: -20%;
+    margin-bottom: -0.5%;
+}
+
+.text img {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#intro {
+    position: absolute;
+    animation-name: example;
+    animation-duration: 300s;
+    animation-iteration-count: infinite;
+    top: 1400px;
+    right: 0px;
+    width: 50%;
+    padding: 5%;
+    padding-top: 60px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+#calendar {
+    padding-top: 190px;
+    position: absolute;
+    top: 1300px;
+    left: 15%;
+}
+#calendar div {
+    -ms-transform: skewY(15deg); /* IE 9 */
+    -webkit-transform: skewY(15deg); /* Safari */
+    transform: skewY(15deg);
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+}
+#about {
+    position: absolute;
+    top: 2500px;
+    right: 0px;
+    width: 50%;
+    padding-top: 100px;
+}
+#about div {
+    animation-name: example;
+    animation-duration: 300s;
+    animation-iteration-count: infinite;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 5%;
+}
+#library {
+    position: absolute;
+    top: 4500px;
+    right: 0px;
+    width: 50%;
+    padding-top: 200px;
+}
+#library div {
+    animation-name: example;
+    animation-duration: 300s;
+    animation-iteration-count: infinite;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 5%;
+}
+#events {
+    position: absolute;
+    top: 6000px;
+    left: 0px;
+    width: 49.8%;
+    padding-top: 200px;
+    background-color: transparent;
+}
+#events div {
+    background-color: white;
+    padding: 10px 30px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 
@@ -136,9 +267,56 @@ float: left;
 /* for the language button */
 #select_language {
     cursor: pointer;
-    padding-left: 170px;
 }
 /* when a language is selected the others are not displayed */
 .active {
     display: none;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width:50px) and (max-width:600px) {
+    .header {
+        position: absolute;
+        top: 15px;
+        left: 28px;
+        z-index: 100000;
+        margin-top: 40%;
+    }
+    #intro {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+    }
+    #calendar {
+        position: relative;
+        top: 0px;
+        left: 0%;
+        padding-left: 20%;
+    }
+    #about {
+        position: relative;
+        right: 0px;
+        left: 0px;
+        width: 100%;
+        top: 100px;
+        padding-top: 0px;
+    }
+    #library {
+        position: relative;
+        right: 0px;
+        left: 0px;
+        width: 100%;
+        top: 100px;
+        padding-top: 0px;
+    }
+    #events {
+        position: relative;
+        right: 0px;
+        left: 0px;
+        top: 100px;
+        width: 100%;
+        padding-top: 0px;
+    }
 }

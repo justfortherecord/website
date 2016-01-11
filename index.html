@@ -48,8 +48,12 @@
 
 <!-- BACKGROUND IMAGES -->
     <div class="container-background">
-        <img src="images/just-the-perspective-1.svg" class="background-left"/>
-        <img src="images/just-the-perspective-2.svg" class="background-right" />
+        <img src="images/just-the-perspective-1.svg" class="background-left" id="start-page" style="margin-top: 40%;" />
+        <img src="images/just-the-perspective-2.svg" class="background-right" style="margin-top: 40%;" />
+        <img src="images/just-the-perspective-3.svg" class="background-left" />
+        <img src="images/just-the-perspective-3.svg" class="background-right" style="visibility: hidden" />
+        <img src="images/just-the-perspective-4.svg" class="background-left" style="visibility: hidden" />
+        <img src="images/just-the-perspective-4.svg" class="background-right" />
     </div>
 
 
@@ -57,13 +61,36 @@
   <!-- HEADER -->
 
     <div class="header">
-            <img class="logo" src="images/favicon.ico"/>
-            <h1> Just For The Record</h1>
+            <!-- not displayed but needs to stay to be referenced! -->
+            <h1> Just For The<br />Record</h1>
             <nav>
                 <ul>
-                    <li><a href="about.html" class="internal-link">ABOUT</a></li>
-                    <li><a href="events.html" class="internal-link">EVENTS</a></li>
-                    <li><a href="readings.html" class="internal-link">library</a></li>
+                    <li><a href="#about" class="internal-link">
+                            <div class="text">
+                                <div class="en" lang="en">ABOUT</div>
+                                <div class="fr" lang="fr">À PROPOS</div>
+                                <div class="nl" lang="nl">OVER</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#calendar" class="internal-link">
+                            <div class="text">
+                                <div class="en" lang="en">EVENTS</div>
+                                <div class="fr" lang="fr">AGENDA</div>
+                                <div class="nl" lang="nl">EVENEMENTEN</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#library" class="internal-link">
+                            <div class="text">
+                                <div class="en" lang="en">READING ROOM</div>
+                                <div class="fr" lang="fr">RESSOURCES</div>
+                                <div class="nl" lang="nl">BIBLIOTHEEK</div>
+                            </div>
+                        </a>
+                    </li>
                     <div id="select_language">
                         <ul>
                             <li class="nl"><a href="#nl" class="internal-link">NL</a></li>
@@ -73,60 +100,38 @@
                     </div>
                 </ul>
             </nav>
+            <a href="index.html" class="internal-link"><img class="logo" src="images/just-just-for-the-record.svg" style="width: 250px;" /></a>
       </div>
 <!-- END HEADER -->
 
 
-<!-- CALENDAR -->
 
-    <div class="calendar">
-        <a href="" class="internal-link">EVENTS<br />
-        <!-- <hr> -->
-        <ul>
-        <dt>15.01.15</dt>
-        <dd><i>Heroines</i></dd>
-        <dd>PianoFabriek</dd>
-        <!-- <hr> -->
-        <dt>27.02.15</dt>
-        <dd><i>Patterns</i></dd>
-        <dd>Amazone</dd>
-        <!-- <hr> -->
-        <dt>18-20.03.15</dt>
-        <dd>Ladyfest</dd>
-        </ul></a>
-    </div>
-
-<!--END CALENDAR -->
-
-
-<!-- CALENDAR -->
 
 
 <!-- INTRO -->
-    <div class="text" class="intro">
+    <div class="text" id="intro">
                 <!--NL -->
                 <div class="nl" lang="nl">
-                    <h2>===in aanbouw===</h2>
-                    <p>Just For The Record is een project dat kijkt aan hoe gender is vertegenwoordigd in de nieuwe media, schrijven/publishing tools zoals Wikipedia, en hoe dat beïnvloedt de manier waarop geschiedenis wordt vastgelegd. <a href="about.html" class="internal-link">→</a></p>
-                    <p>Om deze onderwerpen te aansnijden, en meer online diversiteit te stimuleeren, Just For The Record steelt een opeenvolging van thematische evenementen vanaf January 2016, met gasten, presentaties en collectieve editing sessions op Wikipedia: op de 15.01.15 <i>Heldinnen</i> in PianoFabriek met Catherine Lenoble, op de 27.02.15 <i>Patterns</i> in Amazone met Femke Snelting, op de 18-20.03.15 in the Ladyfest… <a href="events.html" class="internal-link">→</a></p>
-                    <p>Onze evenementen zijn gratis en open voor iedereen, vóór het zover is kunnen jullie hier een selectie van artikels, naslagwerken, en meer informatie op deze onderwerpen. <a href="readings.html" class="internal-link">→</a></p>
+                    <p>Just For The Record bevraagt de vertegenwoordiging van gender in nieuwe media, meer bepaald in nieuwe schrijf-gemeenschappen zoals Wikipedia. Wat betekent de genderverhouding binnen deze platforms voor de manier waarop geschiedenis wordt vastgelegd? <a href="#about" class="internal-link">→</a></p>
+                    <p>Om deze kwesties aan te snijden en meer online diversiteit te stimuleren organiseert Just For The Record een serie thematische evenementen vanaf januari 2016, met gasten, presentaties en collectieve Wikipedia bewerkingssessies. Op de 15.01.15 <i>Heldinnen</i> in PianoFabriek met Catherine Lenoble en Clara Thomine, op de 27.02.15 <i>Patterns</i> in Amazone met Femke Snelting, op de 18-20.03.15 in the Ladyfest… <a href="#events" class="internal-link">→</a></p>
+                    <p>Onze evenementen zijn gratis en staan open voor iedereen, en voor het zover is kunnen jullie hier een selectie van artikels, naslagwerken, en aanvullende informatie vinden. <a href="#library" class="internal-link">→</a></p>
                 </div>
                 <!-- end div NL -->
 
                 <!-- EN -->
                 <div class="en" lang="en">
                     <p>Just for the record,<br />
-            We are looking into how gender is represented in new media and writing/publishing tools like Wikipedia, and how it influences the way history is recorded. <a href="about.html" class="internal-link">→</a></p>
-                  <p>To address issues of gender representation and encourage more variety online, we propose a series of meetings in Brussels starting in January 2016: on the 15.01.15 <i>Heroines</i> at PianoFabriek, with Catherine Lenoble, on the 27.02.15 <i>Patterns</i> at Amazone, with Femke Snelting, on the 18-20.03.15, JFTR at Ladyfest. <a href="events.html" class="internal-link">→</a></p>
-                  <p>Our events are free and open to anyone, we hope to see you soon and in the meantime you can discover a selection of articles, references and more around these topics. <a href="readings.html" class="internal-link">→</a></p>
+                    We are investigating how gender is represented in new media and writing/publishing tools like Wikipedia, and how it influences the way history is recorded. <a href="#about" class="internal-link">→</a></p>
+                    <p>To address issues of gender representation and encourage more variety online, we propose a series of meetings in Brussels starting in January 2016: on the 15.01.15 <i>Heroines</i> at PianoFabriek, with Catherine Lenoble, on the 27.02.15 <i>Patterns</i> at Amazone, with Femke Snelting, on the 18-20.03.15, JFTR at Ladyfest. <a href="#events" class="internal-link">→</a></p>
+                    <p>Our events are free and open to anyone, we hope to meet you there and in the meantime you can discover a selection of articles, references and more around these topics. <a href="#readings" class="internal-link">→</a></p>
                 </div>
                 <!-- end div EN -->
 
                 <!-- FR -->
                 <div class="fr" lang="fr">
-                    <p>Just For The Record est un projet questionnant la représentation des genres dans les nouveaux médias et les outils d’écriture/de partage du savoir tels que Wikipédia, et l’influence de cette représentation sur l’écriture de l’histoire et du savoir. <a href="about.html" class="internal-link">→</a></p>
-                    <p>Pour approcher ces question et encourager plus de diversité en ligne, Just For The Record propose une série de rencontres thématiques à partir de Janvier 2016, avec des invité·e·s, des présentations et des sessions d’édition collectives sur Wikipedia: le 15.01.15 <i>Héroines</i> à PianoFabriek, avec Catherine Lenoble, le 27.02.15 <i>Patterns</i> à Amazone, avec Femke Snelting, le 18-20.03.15 au Ladyfest… <a href="events.html" class="internal-link">→</a></p>
-                    <p>Nos événements sont gratuits et ouverts à tou·te·s, nous espérons vous y voir bientôt et d’ici là vous pouvez découvrir une sélection d’articles, de références et plus d’informations sur ces sujets. <a href="readings.html" class="internal-link">→</a></p>
+                    <p>Just For The Record est un projet questionnant la représentation des genres dans les nouveaux médias et les outils d’écriture/de partage du savoir tels que Wikipédia, et l’influence de cette représentation sur l’écriture de l’histoire et du savoir. <a href="#about" class="internal-link">→</a></p>
+                    <p>Pour approcher ces question et encourager plus de diversité en ligne, Just For The Record propose une série de rencontres thématiques à partir de Janvier 2016, avec des invité·e·s, des présentations et des sessions d’édition collectives sur Wikipedia: le 15.01.15 <i>Héroines</i> à PianoFabriek, avec Catherine Lenoble, le 27.02.15 <i>Patterns</i> à Amazone, avec Femke Snelting, le 18-20.03.15 au Ladyfest… <a href="#events" class="internal-link">→</a></p>
+                    <p>Nos événements sont gratuits et ouverts à tou·te·s, nous espérons vous y voir bientôt et d’ici là vous pouvez découvrir une sélection d’articles, de références et plus d’informations sur ces sujets. <a href="#readings" class="internal-link">→</a></p>
                 </div>
                 <!-- end div FR -->
 
@@ -138,68 +143,95 @@
 
 
 
+
+
+
+<!-- CALENDAR -->
+    <a href="#events" class="internal-link">
+    <div class="calendar" id="calendar">
+        <div>
+            <dt>EVENTS</dt><br />
+            <dt>15.01.15</dt>
+            <dd><i>Heroines</i></dd>
+            <dd>PianoFabriek</dd><br />
+            <dt>27.02.15</dt>
+            <dd><i>Patterns</i></dd>
+            <dd>Amazone</dd><br />
+            <dt>18-20.03.15</dt>
+            <dd>Ladyfest</dd>
+        </div>
+    </div>
+    </a>
+
+<!-- END CALENDAR -->
+
+
+
+
 <!-- ABOUT -->
-<div class="text" class="about">
-                    <!-- NL -->
-                    <div class="nl" lang="nl">
-                        <h2>===in aanbouw===</h2>
-                        <p>Just For The Record is een project dat kijkt aan hoe gender is vertegenwoordigd in de nieuwe media, schrijven/publishing tools zoals Wikipedia, en hoe dat beïnvloedt de manier waarop geschiedenis wordt vastgelegd.</p>
-                        <p>Om deze onderwerpen te aansnijden, en meer online diversiteit te stimuleeren, Just For The Record steelt een opeenvolging van thematische evenementen vanaf January 2016, met gasten, presentaties en collectieve editing sessions op Wikipedia: op de 15.01.15 “Heldinnen” in PianoFabriek met Catherine Lenoble, op de 27.02.15 “Patterns” in Amazone met Femke Snelting, op de 18-20.03.15 in the Ladyfest… <a href="events.html" class="internal-link">&#8594;</a></p>
-                        <p>Onze evenementen zijn gratis en open voor iedereen, vóór het zover is kunnen jullie hier een selectie van artikels, naslagwerken, en meer informatie op deze onderwerpen. <a href="readings.html" class="internal-link">&#8594;</a></p>
-                        <h2>Contact</h2>
-                        <p>info at justfortherecord.space</p>
+<div class="text" id="about">
+    <!-- NL -->
+    <div class="nl" lang="nl">
+        <h2>OVER</h2>
+        <p>Just For The Record bevraagt de vertegenwoordiging van gender in nieuwe media, meer bepaald in nieuwe schrijf-gemeenschappen zoals Wikipedia. Wat betekent de genderverhouding binnen deze platforms voor de manier waarop geschiedenis wordt vastgelegd?</p>
+        <h2>HET GENDER GAP</h2>
+        <p>Platforms zoals Wikipedia hebben een aanzienlijk belang in onze samenleving verworven. Omdat ze nieuwe schrijf- en publiceer-gereedschappen introduceren waarmee de teksten tot stand komen, kunnen we stellen dat de geschiedenis herschreven wordt. Daarom is het onrustbarend dat onderzoeken aantonen dat slecht <a href="https://meta.wikimedia.org/wiki/Address_the_gender_gap/FAQ#How_many_women_are_there_on_Wikipedia_.28and_other_Wikimedia_projects.29.3F" target="_blank">8,5 tot 22,7%</a> van de auteurs van Wikipedia vrouw zijn. Dit probleem is door de gemeenschap zelf benoemd als het ‘Gender gap’.</p>
+        <h2>MEDEWERKERS<br />STIJL<br />ONDERWERPEN</h2>
+        <p>Het motto van Wikipedia is: "de vrije encyclopedie die iedereen kan bewerken", en toch beschouwt het merendeel van de auteurs zich als man. Hierbij komt dat in de inhoud van Wikipedia de rol van de vrouw soms bedenkelijk gerepresenteerd wordt.</p>
+        <p>Een symbolische voorbeel: het artikel "<a href="https://nl.wikipedia.org/wiki/Heldin" target="_blank">heldin</a>" wordt automatisch doorgestuurd naar het artikel "held", waarin de behandelde emblematische figuren voor het merendeel mannelijk zijn. Naast de problemen van auteurschap en onderwerpskeuze, zijn de schrijfstijl en de structuur van de artikelen ook vaak problematisch. Een  klassiek voorbeeld is de grote hoeveelheid artikelen over vrouwen die beginen met "deze vrouw was de zus / vrouw van deze beroemde man". Hoewel Wikipedia ons de kans geeft de geschiedenis opnieuw op te schrijven, lijken dezelfde vooroordelen opnieuw vastgelegd te worden.</p>
+        <h2>EVENEMENTEN</h2>
+        <p>Om deze vraagstukken aan te pakken stelt Just For The Record een serie evenementen voor in Brussel vanaf januari 2016.</p>
+        <p>Elk evenement zal met een lezing beginnen, gegeven door een gastspreker of organisatie over een onderwerp met betrekking tot het gender gap. Dit zal het vertrekpunt zijn om het de vertegenwoordiging van het thema op Wikipedia te bevragen, en om artikelen aan te wijzen die gewijzigd of opgezet moeten worden. Deelnemers krijgen vervolgens een spoedcursus Wikipedia bewerken. Een artistieke interventie met betrekking tot het onderwerp zal nieuwe perspectieven openen en de dag besluiten. De sessie zal een dag duren en zal elke keer op een andere plek plaatsvinden, om het rijke netwerk te benadrukken in en rond Brussel van organisaties die actief zijn op het gebied van gender, feminisme en nieuwe media.</p>
+        <h2>Contact</h2>
+        <p>info at justfortherecord.space</p>
+        <h2>GESCHIDENIS</h2>
+        <p>Het project werd opgericht kort na een Art + Feminism Wikipedia edit-a-thon die in Brussel plaatsvond in maart 2015. Dit evenement legde de behoefte bloot aan meer bijeenkomsten rond diversiteit binnen online platforms voor kennisdeling.</p>
 
-                    </div>
-                    <!-- end div NL -->
+    </div>
+    <!-- end div NL -->
 
-                    <!-- EN -->
-                      <div class="en" lang="en">
-                          <h2>About</h2>
-                          <h2>Gender representation<br/>in the re·writing of history</h2>
-                          <p>Just For The Record is a project addressing how gender is represented in new media and writing/publishing tools like Wikipedia, and what influence this has on the way history is recorded.</p>
-                          <h2>Gender Gap</h2>
-                          <p>
-                  With the importance that such platforms as Wikipedia have gained in our society, and the new writing and publishing tools it proposes, it is becoming clear that history is being written down once again. Therefore it is of great concern when studies reveal that <a href="https://meta.wikimedia.org/wiki/Address_the_gender_gap/FAQ#How_many_women_are_there_on_Wikipedia_.28and_other_Wikimedia_projects.29.3F" target="_blank">only 8,5 to 22.7%</a> of Wikipedia’s contributors are women. This problem was identified by the community itself as the Gender Gap.</p>
-                          <h2>contributors<br />topics<br />style</h2>
-                          <p>Despite their efforts to come up with solutions to live up to their motto “the free encyclopedia that anyone can edit”, not only are the contributors majoritarily male-identified, but the contents published also show partial gender representations.  As a symbolic example, the article “<a href="https://en.wikipedia.org/wiki/Heroine" target="_blank">heroine</a>” is automatically redirected to the article “hero”, and its emblematic figures are mostly male ones. Next to the issues of authorship and subject matters, the writing style and structure can often be problematic. A classic example of this is the amount of articles about women that starts with “this woman was the sister/wife of this famous man” in their first or second sentence.</p>
-                            <p>It looks as though history is being rewritten with the same biases once again.</p>
-                            <h2>Events</h2>
-                            <p>To address these issues Just for the record will propose a series of events in Brussels from January 2016.</p>
-                            <p>Each event will start with a lecture given by a guest speaker or organization about  a topic related to the gender gap. This presentation will be used as a  starting point to question the topic’s representation on Wikipedia and   to identify articles that need to be created or modified. Participants  will then be given a crash course to Wikipedia editing, followed by an  editing session. An artistic intervention relevant to the topic will open up to new perspectives and close the day. The session will last one day and   will be held in a different location each time, as a way to highlight   the rich network of organizations already active in gender, feminism  and  media issues in and around Brussels. </p>
-                            <h2>Contact</h2>
-                            <p>info at justfortherecord.space</p>
-                            <h2>Past</h2>
-                            <p>The project was created shortly after an <a href="https://en.wikipedia.org/wiki/Wikipedia:Meetup/Brussels/ArtAndFeminism_2015" target="_blank">Art+Feminism Wikipedia Edit-a-thon</a> that took place in Brussels March 2015, which called attention to the need for more gatherings confronting how to create diversified contributions to online knowledge platforms.</p>
+    <!-- EN -->
+      <div class="en" lang="en">
+          <h2>About</h2>
+          <h2>Gender representation<br/>in the re·writing of history</h2>
+          <p>Just For The Record is a project addressing how gender is represented in new media and writing/publishing tools like Wikipedia, and what influence this has on the way history is recorded.</p>
+          <h2>Gender Gap</h2>
+          <p>With the importance that such platforms as Wikipedia have gained in our society, and the new writing and publishing tools they propose, it is becoming clear that history is being written down once again. Therefore it is of great concern when studies reveal that <a href="https://meta.wikimedia.org/wiki/Address_the_gender_gap/FAQ#How_many_women_are_there_on_Wikipedia_.28and_other_Wikimedia_projects.29.3F" target="_blank">only 8,5 to 22.7%</a> of Wikipedia’s contributors are women. This problem was identified by the community itself as the Gender Gap.</p>
+          <h2>contributors<br />topics<br />style</h2>
+          <p>Despite their efforts to come up with solutions to live up to their motto “the free encyclopedia that anyone can edit”, Wikipedia’s contributors are still predominantly male. Moreover, the contents published also show partial gender representations.  As a symbolic example, the article “<a href="https://en.wikipedia.org/wiki/Heroine" target="_blank">heroine</a>” is automatically redirected to the article “hero”, and its emblematic figures are mostly male ones. Next to the issues of authorship and subject matters, the writing style and structure can often be problematic. A classic example of this is the amount of articles about women that starts with “this woman was the sister/wife of this famous man” in their first or second sentence.</p>
+          <p>It looks as though history is being rewritten with the same biases once again.</p>
+          <h2>Events</h2>
+          <p>To address these issues Just for the record will propose a series of events in Brussels starting in January 2016.</p>
+          <p>Each event will start with a lecture given by a guest speaker or organization about  a topic related to the gender gap. This presentation will be used as a starting point to question the topic’s representation on Wikipedia and to identify articles that need to be created or modified. Participants  will then be given a crash course in Wikipedia editing, followed by an  editing session. An artistic intervention relevant to the topic will open up to new perspectives and close the day. The session will last one day and   will be held in a different location each time, as a way to highlight   the rich network of organizations already active in gender, feminism  and  media issues in and around Brussels. </p>
+          <h2>Contact</h2>
+          <p>info at justfortherecord.space</p>
+          <h2>Past</h2>
+          <p>The project was created shortly after an <a href="https://en.wikipedia.org/wiki/Wikipedia:Meetup/Brussels/ArtAndFeminism_2015" target="_blank">Art+Feminism Wikipedia Edit-a-thon</a> that took place in Brussels March 2015, which called attention to the need for more gatherings that invetsigate how to create diversified contributions to online knowledge platforms.</p>
+      </div>
+      <!-- end div EN -->
 
-                      </div>
-                      <!-- end div EN -->
+      <!-- FR -->
+      <div class="fr" lang="fr">
+          <h2>à propos</h2>
+          <h2>Representation des genres<br/>et ré·écriture de l’histoire</h2>
+          <p>Just For The Record est un projet portant sur la représentation des genres dans les nouveaux médias et les outils d’écriture/de partage du savoir tels que Wikipédia, et l’influence de cette représentation sur l’écriture de l’histoire et du savoir.</p>
+          <h2>gender gap</h2>
+          <p>Avec l’importance que les plateformes de partage du savoir comme Wikipédia ont acquis dans notre société et leur innovation en termes de processus d’écriture (collaborative), nous sommes en train d’assister à une réécriture de l’histoire. Mais malgré la supposée ouverture des ces outils à tous, il est alarmant de constater que <a href="https://meta.wikimedia.org/wiki/Address_the_gender_gap/FAQ#How_many_women_are_there_on_Wikipedia_.28and_other_Wikimedia_projects.29.3F" target="_blank">seulement 8,5 à 22,7%</a> des contributeurs de Wikipédia sont des femmes. Ce phénomène, connu sous le terme de «&nbsp;gender gap&nbsp;» créé des biais dans l’écriture des savoirs et de l’histoire, et prolonge une tradition majoritairement masculine liée à la publication du savoir.</p>
+          <h2>auteurs<br />
+            sujets<br />
+            style</h2>
+        <p>Très peu de femmes contributrices donc, et certains sujets sous-représentés. Un exemple symbolique en est l’article «&nbsp;<a href="https://fr.wikipedia.org/wiki/H%C3%A9ro%C3%AFne_%28homonymie%29" target="_blank">héroine</a>&nbsp;» qui n’existe pas en français, et dont la page d’homonymie renvoie vers la page «&nbsp;hero&nbsp;», supposée être neutre, qui présente malgré tout principalement des figures masculines de héros.
+        Un autre niveau problématique, l’écriture elle-même, influence la façon dont les sujets sont représentés. Encore beaucoup d’articles sur des femmes ont pour première ou seconde phrase «&nbsp;telle femme est la soeur/femme de tel homme notoire&nbsp;».</p>
+        <h2>événements</h2>
+        <p>Afin d’aborder ces problèmes et de promouvoir la diversité en ligne, Just for the Record proposera une série d’événements à Bruxelles et en Belgique à partir de janvier 2016.</p>
+        <p>Chaque événement débutera par une conférence donnée par un·e invité·e sur un sujet lié à l’égalité des genres et des sexes. Cette présentation servira de point de départ pour interroger la représentation du sujet sur Wikipédia et identifier les articles nécessitant d’être créés ou modifiés. Les participants apprendront les rudiments de l’édition sur Wikipédia, et pourront mettre leurs nouvelles connaissances en pratique lors d’une session d’édition intensive. Chaque réunion durera une journée et prendra place dans différents lieux, afin de mettre en évidence le riche réseau local d’organisations déjà actives dans les questions liées au genre, au féminisme et aux nouveaux médias.</p>
 
-                      <!-- FR -->
-                    <div class="fr" lang="fr">
-                        <h2>à propos</h2>
-                        <h2>Representation des genres<br/>et ré·écriture de l’histoire</h2>
-                        <p>Just For The Record est un projet portant sur la représentation des genres dans les nouveaux médias et les outils d’écriture/de partage du savoir tels que Wikipédia, et l’influence de cette représentation sur l’écriture de l’histoire et du savoir.</p>
-                        <h2>gender gap</h2>
-                        <p>Avec l’importance que les plateformes de partage du savoir comme Wikipédia ont acquis dans notre société et leur innovation en termes de processus d’écriture (collaborative), nous sommes en train d’assister à une réécriture de l’histoire. Mais malgré la supposée ouverture des ces outils à tous, il est alarmant de constater que <a href="https://meta.wikimedia.org/wiki/Address_the_gender_gap/FAQ#How_many_women_are_there_on_Wikipedia_.28and_other_Wikimedia_projects.29.3F" target="_blank">seulement 8,5 à 22,7%</a> des contributeurs de Wikipédia sont des femmes. Ce phénomène, connu sous le terme de «&nbsp;gender gap&nbsp;» créé des biais dans l’écriture des savoirs et de l’histoire, et prolonge une tradition majoritairement masculine liée à la publication du savoir.</p>
-                        <h2>auteurs<br />
-                            sujets<br />
-                            style</h2>
-                        <p>Très peu de femmes contributrices donc, et certains sujets sous-représentés. Un exemple symbolique en est l’article «&nbsp;<a href="https://fr.wikipedia.org/wiki/H%C3%A9ro%C3%AFne_%28homonymie%29" target="_blank">héroine</a>&nbsp;» qui n’existe pas en français, et dont la page d’homonymie renvoie vers la page «&nbsp;hero&nbsp;», supposée être neutre, qui présente malgré tout principalement des figures masculines de héros.
-                        Un autre niveau problématique, l’écriture elle-même, influence la façon dont les sujets sont représentés. Encore beaucoup d’articles sur des femmes ont pour première ou seconde phrase «&nbsp;telle femme est la soeur/femme de tel homme notoire&nbsp;».</p>
-                        <h2>événements</h2>
-                        <p>Afin d’aborder ces problèmes et de promouvoir la diversité en ligne, Just for the Record proposera une série d’événements à Bruxelles et en Belgique à partir de janvier 2016.</p>
-                        <p>Chaque événement débutera par une conférence donnée par un·e invité·e sur un sujet lié à l’égalité des genres et des sexes. Cette présentation servira de point de départ pour interroger la représentation du sujet sur Wikipédia et identifier les articles nécessitant d’être créés ou modifiés. Les participants apprendront les rudiments de l’édition sur Wikipédia, et pourront mettre leurs nouvelles connaissances en pratique lors d’une session d’édition intensive. Chaque réunion durera une journée et prendra place dans différents lieux, afin de mettre en évidence le riche réseau local d’organisations déjà actives dans les questions liées au genre, au féminisme et aux nouveaux médias.</p>
-
-                        <h2>Contact</h2>
-                        <p>info at justfortherecord.space</p>
-                        <h2>passé</h2>
-                        <p>Le projet a été créé suite à l’événement <a href="https://en.wikipedia.org/wiki/Wikipedia:Meetup/Brussels/ArtAndFeminism_2015" target="_blank">Art+Feminism Wikipedia Edit-a-thon</a> en mars 2015 à Bruxelles, révélateur de la nécessité de rassemblements plus fréquents promouvant la diversité des genres représentés sur les plateformes de connaissance en ligne.</p>
-                    </div>
-                    <!-- end div FR -->
-
-                      <img src="http://justfortherecord.space/images/logo-trans.png" />
-
-
+        <h2>Contact</h2>
+        <p>info at justfortherecord.space</p>
+        <h2>passé</h2>
+        <p>Le projet a été créé suite à l’événement <a href="https://en.wikipedia.org/wiki/Wikipedia:Meetup/Brussels/ArtAndFeminism_2015" target="_blank">Art+Feminism Wikipedia Edit-a-thon</a> en mars 2015 à Bruxelles, révélateur de la nécessité de rassemblements plus fréquents promouvant la diversité des genres représentés sur les plateformes de connaissance en ligne.</p>
+    </div>
+    <!-- end div FR -->
 </div>
 <!-- end div text -->
 <!-- END ABOUT -->
@@ -211,60 +243,104 @@
 
 <!-- EVENT -->
 
-<div class="text" class="event">
+<div class="text" id="events">
     <!--NL -->
     <div class="nl" lang="nl">
-        <h2>EVENTS</h2>
         <h3>15.01.15</h3>
-        <p><i>Heldinnen</i> bij PianoFabriek, met <a href="https://litteraturing.wordpress.com/2013/04/09/kavan-walk-in-london/">Catherine Lenoble</a></p>
-        <h3>27.02.15</h3>
-        <p><i>pattern-en-patternalism</i> bij Amazone, met Femke Snelting</p>
-        <h3>18-20.03.15</h3>
-        <p>JFTR Ladyfest.</p>
+        <p><i>Heldinnen</i> bij PianoFabriek, met <a href="https://litteraturing.wordpress.com/2013/04/09/kavan-walk-in-london/" target="_blank">Catherine Lenoble</a></p>
+        <h2>Program:</h2>
+        <ul>
+            <li>10:00 – welcome at PianoFabriek with tea and coffee</li>
+            <li>10:30 – presentation of Just For The Record</li>
+            <li>11:00 – presentation by Catherine Lenoble on heroines</li>
+            <li>12:00 – open discussion on the representation of heroines on Wikipedia: what can be added or modified?</li>
+            <li>13:00 – lunch break</li>
+            <li>14:00 – crash course on Wikipedia editing and start of the editing session</li>
+            <li>17:00 – performance by Clara Thomine</li>
+            <li>18:00 – end of the day with the finissage of Catherine Lenoble’s exhibition Anna K at Constant vzw</li>
+        </ul>
+        <h2>27.02.15</h2>
+        <p><i>pattern-en-patternalism</i> bij Amazone, met <a href="http://snelting.domainepublic.net/affiliation-cat/constant/pattern-en-paternalism" target="_blank">Femke Snelting</a></p>
+        <h2>18-20.03.15</h2>
+        <p>JFTR in de <a href="http://ladyfestbrussels.jimdo.com/" target="_blank">Ladyfest</a></p>
         <h3>meer info binnenkort!</h3>
     </div>
     <!-- end div NL -->
 
     <!-- EN -->
     <div class="en" lang="en">
-        <h2>EVENTS</h2>
-        <h3>15.01.15 – 10:00-18:00</h3>
-        <p><i>Heroines</i>, with <a href="https://litteraturing.wordpress.com/2013/04/09/kavan-walk-in-london/">Catherine Lenoble</a>, at PianoFabriek.</p>
-        <h3>27.02.15 – 10:00-18:00</h3>
+        <h2>15.01.15 – 10:00-18:00</h2>
+        <p><i>Heroines</i>, with <a href="https://litteraturing.wordpress.com/2013/04/09/kavan-walk-in-london/" target="_blank">Catherine Lenoble</a>, at PianoFabriek.</p>
+        <p>A day dedicated to presentations, discussions and Wikipedia editing, addressing gender issues around the theme of heroines, with guests Catherine Lenoble and Clara Thomine.</p>
+        <p>Despite Wikipedia’s motto “the free encyclopedia that anyone can edit”, not only are its contributors predominantly male-identified, but the contents published also show obvious gender bias. The problem has been identified by the community itself as Gender Gap. For example, the article “heroine” is automatically redirected to the article “hero” in which the emblematic figures presented are almost exclusively masculine. The writing itself can also influence the way a topic is represented by the tone or emphasis on certain details. A simple example is the amount of articles about women starting with “this woman was the sister/wife of this famous man” as their first or second sentence. </p>
+        <h3>Program:</h3>
+        <ul>
+            <li>10:00 – welcome at PianoFabriek with tea and coffee</li>
+            <li>10:30 – presentation of Just For The Record</li>
+            <li>11:00 – presentation by Catherine Lenoble on heroines</li>
+            <li>12:00 – open discussion on the representation of heroines on Wikipedia: what can be added or modified?</li>
+            <li>13:00 – lunch break</li>
+            <li>14:00 – crash course on Wikipedia editing and start of the editing session</li>
+            <li>17:00 – performance by Clara Thomine</li>
+            <li>18:00 – end of the day with the finissage of Catherine Lenoble’s exhibition Anna K at Constant vzw</li>
+        </ul>
+        <p>
+        *The event is free, and a lunch, snacks and drinks will be provided. Please register, we have a maximum capacity of 25 participants.
+        </p>
+        <p>
+        Catherine Lenoble is a Brussels-based writer who explores ways of reading and writing in present time, experimenting with cross-genre narratives and hybrid fictional objects (print, online). She is engaged with writing in different collaborative environments and co-initiated the research group Algo-lit(algorithms &amp; literature) in 2012. Her project Anna K, is currently shown at Constant vzw and online, and a fiction, Anna K, is to be published by HYX editions in 2016.
+        </p>
+        <p>
+        Clara Thomine a Brussels-based performance, video and installation artist. She studied at École nationale supérieure d’art de Nancy until 2011, after which she obtained an MFA in installation, performance and video from ERG, Brussels in 2014. She recently won the Prix de la SOFAM Médiatines Bruxelles (2014), and the Prix de l’Institut français at the Mulhouse Biennale (2015) and is currently having a solo show at c-o-m-p-o-s-i-t-e gallery in Brussels.
+        </p>
+        <ul>
+            <li>Friday 15.01.2015</li>
+            <li>From 10am to 6pm</li>
+            <li>Pianofabriek</li>
+        </ul>
+        <h2>27.02.15 – 10:00-18:00</h2>
         <p><i>Writing styles and methods</i>, with <a href="http://snelting.domainepublic.net/affiliation-cat/constant/pattern-en-paternalism" target="_blank">Femke Snelting</a>, at Amazone.</p>
-        <h3>18-20.03.15 – TBC</h3>
-        <p>JFTR at <a href="http://ladyfestbrussels.jimdo.com/" target="_blank">Ladyfest</a>.</p>
+        <h2>18-20.03.15 – TBC</h2>
+        <p>JFTR at <a href="http://ladyfestbrussels.jimdo.com/" target="_blank">Ladyfest</a></p>
         <h3>More coming soon!</h3>
     </div>
     <!-- end div EN -->
 
     <!-- FR -->
     <div class="fr" lang="fr">
-        <h2>EVENTS</h2>
-        <h3>15.01.15</h3>
-        <p><i>Héroïnes</i> à PianoFabriek, avec <a href="https://litteraturing.wordpress.com/2013/04/09/kavan-walk-in-london/">Catherine Lenoble</a></p>
-        <h3>27.02.15</h3>
+        <h2>15.01.15</h2>
+        <p><i>Héroïnes</i> à PianoFabriek, avec <a href="https://litteraturing.wordpress.com/2013/04/09/kavan-walk-in-london/" target="_blank">Catherine Lenoble</a></p>
+        <h3>Program:</h3>
+        <ul>
+            <li>10:00 – welcome at PianoFabriek with tea and coffee</li>
+            <li>10:30 – presentation of Just For The Record</li>
+            <li>11:00 – presentation by Catherine Lenoble on heroines</li>
+            <li>12:00 – open discussion on the representation of heroines on Wikipedia: what can be added or modified?</li>
+            <li>13:00 – lunch break</li>
+            <li>14:00 – crash course on Wikipedia editing and start of the editing session</li>
+            <li>17:00 – performance by Clara Thomine</li>
+            <li>18:00 – end of the day with the finissage of Catherine Lenoble’s exhibition Anna K at Constant vzw</li>
+        </ul>
+        <h2>27.02.15</h2>
         <p>à Amazone, avec <a href="http://snelting.domainepublic.net/affiliation-cat/constant/pattern-en-paternalism" target="_blank">Femke Snelting</a></p>
-        <h3>18-20.03.15</h3>
-        <p>JFTR à <a href="http://ladyfestbrussels.jimdo.com/" target="_blank">Ladyfest</a>.</p>
+        <h2>18-20.03.15</h2>
+        <p>JFTR à <a href="http://ladyfestbrussels.jimdo.com/" target="_blank">Ladyfest</a></p>
         <h3>Plus d’infos à venir!</h3>
     </div>
     <!-- end div FR -->
-
 </div>
-<!-- end div text -->
-<!-- END EVENT -->
+<!-- end div text END EVENT -->
 
 
 
 
 
 <!-- LIBRARY -->
-<div class="text" class="library">
+<div class="text" id="library">
 
   <!-- NL -->
     <div class="nl" lang="nl">
-        <h2>FURTHER READINGS</h2>
+        <h2>BIBLIOTHEEK</h2>
         <ul class="">
             <li>The Gender Gap page on Wikimedia website: <a href="https://meta.wikimedia.org/wiki/Address_the_gender_gap/FAQ#How_many_women_are_there_on_Wikipedia_.28and_other_Wikimedia_projects.29.3F" target="_blank">https://meta.wikimedia.org/</a>
             </li>
@@ -275,7 +351,7 @@
              <li><a href="http://read-in.info/" target="_blank"><i>Read-in Amsterdam </i></a> is a self-organized collective that experiments with the political, material, and physical implications of collective reading and the situatedness of any kind of reading activity.
             </li>
         </ul>
-        <h2>IN BELGIUM/BRUSSELS</h2>
+        <h2>IN BELGIË/BRUSSEL</h2>
         <ul class="">
             <li><a href="http://www.rosadoc.be/" target="_blank">Rosa Doc</a>, Expertisecentrum, bibliotheek en archief voor gelijke kansen m/v, feminisme en gender.
             </li>
@@ -290,9 +366,10 @@
             <li><a href="http://wikimedia.be/" target="_blank"><i>Wikimedia Belgium</i></a>!
             </li>
         </ul>
-        <h2>JUST FOR THE RECORD’s HISTORY</h2>
+        <h2>ROND JUST FOR THE RECORD</h2>
+
         <ul class="">
-            <li><a href="graphic-tribute.html" class="internal-link">Notes on inspiring (feminist) graphic design references &#8594;</a>
+            <li><a href="graphic-tribute.html#intro" class="internal-link">Notes on inspiring (feminist) graphic design references &#8594;</a>
             </li>
             <li><a href="https://en.wikipedia.org/wiki/Wikipedia:Meetup/Brussels/ArtAndFeminism_2015" target="_blank">The previous (Art+Feminism) Brussels event’s</a> Wiki page.
             </li>
@@ -307,7 +384,7 @@
 
     <!-- EN -->
     <div class="en" lang="en">
-        <h2>FURTHER READINGS</h2>
+        <h2>READING ROOM</h2>
         <ul class="">
             <li>The Gender Gap page on Wikimedia website: <a href="https://meta.wikimedia.org/wiki/Address_the_gender_gap/FAQ#How_many_women_are_there_on_Wikipedia_.28and_other_Wikimedia_projects.29.3F" target="_blank">https://meta.wikimedia.org/</a>
             </li>
@@ -333,9 +410,9 @@
             <li><a href="http://wikimedia.be/" target="_blank"><i>Wikimedia Belgium</i></a>!
             </li>
         </ul>
-        <h2>JUST FOR THE RECORD’s HISTORY</h2>
+        <h2>AROUND JUST FOR THE RECORD</h2>
         <ul class="">
-            <li><a href="graphic-tribute.html" class="internal-link">Notes on inspiring (feminist) graphic design references &#8594;</a>
+            <li><a href="graphic-tribute.html#intro" class="internal-link">Notes on inspiring (feminist) graphic design references &#8594;</a>
             </li>
             <li><a href="https://en.wikipedia.org/wiki/Wikipedia:Meetup/Brussels/ArtAndFeminism_2015" target="_blank">The previous (Art+Feminism) Brussels event’s</a> Wiki page.
             </li>
@@ -349,7 +426,7 @@
 
     <!-- end div FR -->
     <div class="fr" lang="fr">
-        <h2>FURTHER READINGS</h2>
+        <h2>RESSOURCES</h2>
         <ul class="">
             <li>The Gender Gap page on Wikimedia website: <a href="https://meta.wikimedia.org/wiki/Address_the_gender_gap/FAQ#How_many_women_are_there_on_Wikipedia_.28and_other_Wikimedia_projects.29.3F" target="_blank">https://meta.wikimedia.org/</a>
             </li>
@@ -360,7 +437,7 @@
             <li><a href="http://read-in.info/" target="_blank"><i>Read-in Amsterdam </i></a> is a self-organized collective that experiments with the political, material, and physical implications of collective reading and the situatedness of any kind of reading activity.
             </li>
         </ul>
-        <h2>IN BELGIUM/BRUSSELS</h2>
+        <h2>EN BELGIQUE/BRUXELLES</h2>
         <ul class="">
             <li><a href="http://www.rosadoc.be/" target="_blank">Rosa Doc</a>, Expertisecentrum, bibliotheek en archief voor gelijke kansen m/v, feminisme en gender.
             </li>
@@ -375,9 +452,9 @@
             <li><a href="http://wikimedia.be/" target="_blank"><i>Wikimedia Belgium</i></a>!
             </li>
         </ul>
-        <h2>JUST FOR THE RECORD’s HISTORY</h2>
+        <h2>AUTOUR DE JUST FOR THE RECORD</h2>
         <ul class="">
-            <li><a href="graphic-tribute.html" class="internal-link">Notes on inspiring (feminist) graphic design references &#8594;</a>
+            <li><a href="graphic-tribute.html#intro" class="internal-link">Notes on inspiring (feminist) graphic design references &#8594;</a>
             </li>
             <li><a href="https://en.wikipedia.org/wiki/Wikipedia:Meetup/Brussels/ArtAndFeminism_2015" target="_blank">The previous (Art+Feminism) Brussels event’s</a> Wiki page.
             </li>
@@ -395,7 +472,11 @@
 
 
 
-
+<script type="text/javascript">
+    $(function() {
+        $(document).scrollTop( $("#start-page").offset().top );
+    });
+</script>
 
 
 </body>
