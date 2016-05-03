@@ -200,6 +200,17 @@ nav li.nl, nav li.fr, nav li.en {
     border-top: 3px solid black;
     border-bottom: 3px solid black;
 }
+#past-events {
+    position: absolute;
+    background-color: white;
+    top: 1400px;
+    right: 0px;
+    width: 50%;
+    padding: 5%;
+    padding-top: 60px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
 #calendar {
     padding-top: 190px;
     position: absolute;
@@ -284,6 +295,12 @@ nav li.nl, nav li.fr, nav li.en {
         margin-top: 40%;
     }
     #intro {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+    }
+    #past-events {
         position: relative;
         left: 0px;
         right: 0px;
