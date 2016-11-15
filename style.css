@@ -80,13 +80,12 @@ body {
     font-family: 'spartan';
     font-style: normal;
     font-size: 1.1em;
-    line-height: 1.3em;
+    line-height: 1.4em;
     letter-spacing: 0.5px;
 }
 
 /* FONTS */
 p + p {
-    text-indent: 3em;
     margin-top: 1.3em;
 }
 h1 {
@@ -123,8 +122,14 @@ a, a:visited, a:hover, a:active, a:link {
     border-bottom: 2px solid black;
     text-decoration: none;
 }
-a.internal-link, a.internal-link:visited, a.internal-link:hover, a.internal-link:active, a.internal-link:link {
+a.internal-link, a.internal-link:visited, a.internal-link:active, a.internal-link:link {
     border-bottom: 0px;
+}
+a.internal-link:hover {
+    border-bottom: 2px solid black;
+}
+a.internal-link.border-hover:hover div div {
+    border: 3px solid black;
 }
 ul {
     margin: 1.3em 0;
@@ -189,32 +194,19 @@ nav li.nl, nav li.fr, nav li.en {
 }
 #intro {
     position: absolute;
-    animation-name: example;
-    animation-duration: 300s;
-    animation-iteration-count: infinite;
-    top: 1400px;
+    top: 1100px;
     right: 0px;
     width: 50%;
-    padding: 5%;
+    padding: 40px;
     padding-top: 60px;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
-}
-#past-events {
-    position: absolute;
     background-color: white;
-    top: 1400px;
-    right: 0px;
-    width: 50%;
-    padding: 5%;
-    padding-top: 60px;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
 }
 #calendar {
     padding-top: 190px;
     position: absolute;
-    top: 1300px;
+    top: 900px;
     left: 15%;
 }
 #calendar div {
@@ -227,51 +219,65 @@ nav li.nl, nav li.fr, nav li.en {
 }
 #about {
     position: absolute;
-    top: 2500px;
+    top: 2000px;
     right: 0px;
     width: 50%;
-    padding-top: 100px;
-}
-#about div {
-    animation-name: example;
-    animation-duration: 300s;
-    animation-iteration-count: infinite;
+    padding-top: 40px;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
-    padding: 5%;
+    background-color: white;
+}
+#about div {
+    padding: 40px;
 }
 #library {
     position: absolute;
-    top: 4500px;
+    top: 4250px;
     right: 0px;
     width: 50%;
-    padding-top: 200px;
+    padding-top: 150px;
 }
 #library div {
-    animation-name: example;
-    animation-duration: 300s;
-    animation-iteration-count: infinite;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
-    padding: 5%;
+    padding: 40px;
 }
 #events {
     position: absolute;
     top: 6000px;
     left: 0px;
     width: 49.8%;
-    padding-top: 200px;
+    padding-top: 150px;
     background-color: transparent;
 }
 #events div {
     background-color: white;
-    padding: 10px 30px;
+    padding: 20px 30px;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
 }
 
+#past-events {
+    position: absolute;
+    background-color: white;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    padding: 40px;
+    padding-top: 60px;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
 
-
+.archive-title {
+    margin-top: 150px;
+    border-top: 3px solid black;
+    padding-top: 30px;
+}
+.archive-section {
+    margin-top: 50px;
+}
 
 
 /* LANGUAGES */
@@ -287,37 +293,41 @@ nav li.nl, nav li.fr, nav li.en {
 /* RESPONSIVE */
 
 @media screen and (min-width:50px) and (max-width:600px) {
+    .container-background {
+        display: none;
+    }
     .header {
-        position: absolute;
-        top: 15px;
-        left: 28px;
+        position: relative;;
+        top: 0px;
+        left: 0px;
         z-index: 100000;
-        margin-top: 40%;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .logo {
+        margin-top: 15px;
     }
     #intro {
         position: relative;
+        top: 0px;
         left: 0px;
         right: 0px;
         width: 100%;
-    }
-    #past-events {
-        position: relative;
-        left: 0px;
-        right: 0px;
-        width: 100%;
+        margin-top: 30px;
+        padding-top: 20px;
     }
     #calendar {
         position: relative;
         top: 0px;
         left: 0%;
-        padding-left: 20%;
+        padding: 50px 40px;
     }
     #about {
         position: relative;
         right: 0px;
         left: 0px;
         width: 100%;
-        top: 100px;
+        top: 0px;
         padding-top: 0px;
     }
     #library {
@@ -325,15 +335,27 @@ nav li.nl, nav li.fr, nav li.en {
         right: 0px;
         left: 0px;
         width: 100%;
-        top: 100px;
+        top: 0px;
         padding-top: 0px;
+        border-top: 0;
     }
     #events {
         position: relative;
         right: 0px;
         left: 0px;
-        top: 100px;
+        top: 0px;
         width: 100%;
         padding-top: 0px;
+        margin-top: 40px;
+    }
+    #past-events {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        margin-top: 40px;
+    }
+    nav div {
+    display: block;
     }
 }
